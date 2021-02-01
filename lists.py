@@ -18,7 +18,7 @@ print(plist)
 plist.remove("'")
 print(plist)
 
-# using extend method to concatenate two lists
+# using extend method to concatenate two lists.
 plist.extend([plist.pop(), plist.pop()])
 print(plist)
 
