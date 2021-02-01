@@ -25,3 +25,7 @@ print(plist)
 # using insert method to add from left
 plist.insert(2, plist.pop(3))
 print(plist)
+
+#using copy method to duplicate a list
+secondlist=plist.copy()
+print(plist)
