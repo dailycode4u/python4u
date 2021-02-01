@@ -26,6 +26,10 @@ print(plist)
 plist.insert(2, plist.pop(3))
 print(plist)
 
-#using copy method to duplicate a list.
-secondlist=plist.copy()
-print(plist)
+# using copy method to duplicate a list.
+secondlist = plist.copy()
+print(secondlist)
+
+# using start stop and step
+thirdlist = plist[1:4:1]
+print(thirdlist)
