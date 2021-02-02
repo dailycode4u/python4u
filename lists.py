@@ -44,5 +44,5 @@ phrase2="Don't Panic"
 phrase3=list(phrase2)
 print(phrase3)
 phrase4 = ''.join(phrase3[1:3])
-phrase4 = phrase4 +(''.join(phrase3[5:6]))+ (''.join(phrase3[4:5]))+(''.join(phrase3[7:8]))+(''.join(phrase3[6:7]))
+phrase4 = phrase4 +(''.join(phrase3[5]))+ (''.join(phrase3[4]))+(''.join(phrase3[7]))+(''.join(phrase3[6]))
 print(phrase4)
