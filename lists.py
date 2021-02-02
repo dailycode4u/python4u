@@ -39,7 +39,7 @@ print(thirdlist)
 # newlist2=newlist[::-1]
 # print(newlist2)
 
-# Challenge: Transform the string "Don't Panic" to the string "On tap" using list methods using slices
+# Challenge: Transform the string "Don't Panic" to the string "On tap" using using slices
 phrase2 = "Don't Panic"
 phrase3 = list(phrase2)
 print(phrase3)
