@@ -34,20 +34,20 @@ print(secondlist)
 thirdlist = plist[1:4:2]
 print(thirdlist)
 
-#reversing an array in place (Remove the hashes)
-#newlist=list(input("enter anything "))
-#newlist2=newlist[::-1]
-#print(newlist2)
+# reversing an array in place (Remove the hashes)
+# newlist=list(input("enter anything "))
+# newlist2=newlist[::-1]
+# print(newlist2)
 
 # Challenge: Transform the string "Don't Panic" to the string "On tap" using list methods using slices
-phrase2="Don't Panic"
-phrase3=list(phrase2)
+phrase2 = "Don't Panic"
+phrase3 = list(phrase2)
 print(phrase3)
 phrase4 = ''.join(phrase3[1:3])
-phrase4 = phrase4 +(''.join(phrase3[5]))+ (''.join(phrase3[4]))+(''.join(phrase3[7]))+(''.join(phrase3[6]))
+phrase4 = phrase4 + (''.join(phrase3[5])) + (''.join(phrase3[4])) + (''.join(phrase3[7])) + (''.join(phrase3[6]))
 print(phrase4)
 
-#Function that finds the missing number in an unsorted array containing every one of the other 99 numbers ranging from 1-100
+# Function that finds the missing number in an unsorted array containing every one of the other 99 numbers ranging from 1-100
 import random
 
 lista = []
@@ -64,4 +64,26 @@ print(lista)
 print(listab)
 for k in lista:
     if k not in listab:
-        print("Missing Value=> ", k)
+        print("Missing Value=> ", k , '\n')
+
+#Function that finds duplicate number in an unsorted array containing every number from 1-100
+listad = []
+listaf=[]
+count2 = 0
+while count2 < 100:
+    listae = random.randint(1, 100)
+    if listae not in listad:
+        listad.append(listae)
+        count2 += 1
+print(listad)
+
+dup=random.randint(0,99)
+dup2=listad[dup]
+listad.append(dup2)
+print(listad)
+print(len(listad))
+for l in listad:
+    if l not in listaf:
+        listaf.append(l)
+    else:
+        print("the imposter =>", l)
