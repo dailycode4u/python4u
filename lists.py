@@ -1,7 +1,7 @@
 # Challenge: Transform the string "Don't Panic" to the string "On tap" using list methods
-
 phrase = "Don't Panic!"
 plist = list(phrase)
+blist = plist.copy()
 
 print(plist)
 
@@ -31,5 +31,18 @@ secondlist = plist.copy()
 print(secondlist)
 
 # using start stop and step
-thirdlist = plist[1:4:1]
+thirdlist = plist[1:4:2]
 print(thirdlist)
+
+#reversing a list (Remove the tags)
+#newlist=list(input("enter anything "))
+#newlist2=newlist[::-1]
+#print(newlist2)
+
+# Challenge: Transform the string "Don't Panic" to the string "On tap" using list methods using slices
+phrase2="Don't Panic"
+phrase3=list(phrase2)
+print(phrase3)
+phrase4 = ''.join(phrase3[1:3])
+phrase4 = phrase4 +(''.join(phrase3[5:6]))+ (''.join(phrase3[4:5]))+(''.join(phrase3[7:8]))+(''.join(phrase3[6:7]))
+print(phrase4)
