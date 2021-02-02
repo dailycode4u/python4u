@@ -34,7 +34,7 @@ print(secondlist)
 thirdlist = plist[1:4:2]
 print(thirdlist)
 
-#reversing a list (Remove the tags)
+#reversing an array in place (Remove the hashes)
 #newlist=list(input("enter anything "))
 #newlist2=newlist[::-1]
 #print(newlist2)
@@ -46,3 +46,22 @@ print(phrase3)
 phrase4 = ''.join(phrase3[1:3])
 phrase4 = phrase4 +(''.join(phrase3[5]))+ (''.join(phrase3[4]))+(''.join(phrase3[7]))+(''.join(phrase3[6]))
 print(phrase4)
+
+#Function that finds the missing number in an unsorted array containing every one of the other 99 numbers ranging from 1-100
+import random
+
+lista = []
+listab = []
+count = 0
+for i in range(1, 101):
+    lista.append(i)
+while count < 99:
+    listac = random.randint(1, 100)
+    if listac not in listab:
+        listab.append(listac)
+        count += 1
+print(lista)
+print(listab)
+for k in lista:
+    if k not in listab:
+        print("Missing Value=> ", k)
