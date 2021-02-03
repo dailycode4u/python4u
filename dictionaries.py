@@ -10,4 +10,3 @@ for letter in aword:
         adictionary[letter] += 1
 
 print(adictionary)
-
