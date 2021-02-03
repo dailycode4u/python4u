@@ -16,4 +16,6 @@ for letter in aword:
     if letter in avowel:
         adictionary[letter] += 1
 for key, result in sorted(adictionary.items()):
-    print(key, " appears ", result, " times")
+    if result != 0:
+        print(key, " appears ", result, " times")
+
