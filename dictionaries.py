@@ -3,7 +3,6 @@
 
 avowel = ('a,e,i,o,u')
 adictionary = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
-bdictionary={}
 aword = input("Enter any word ")
 
 for letter in aword:
