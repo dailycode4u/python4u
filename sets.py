@@ -1,7 +1,7 @@
 #key characteristics of sets is duplicate values are forbidden
 
 sampleset={'a','e','i','o','u','5','3','3','5','a'}
-print(sampleset) #notice the lack of duplicates in the output
+print(sorted(sampleset)) #notice the lack of duplicates in the output
 
 word="dawn48qwer123"
 
