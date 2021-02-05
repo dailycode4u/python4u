@@ -3,19 +3,13 @@
 
 avowel = ('a,e,i,o,u')
 adictionary = {}
-
-adictionary['a'] = 0
-adictionary['e'] = 0
-adictionary['i'] = 0
-adictionary['o'] = 0
-adictionary['u'] = 0
-
 aword = input("Enter any word ")
 
 for letter in aword:
     if letter in avowel:
-        adictionary[letter] += 1
+        if letter not in adictionary:
+            adictionary[letter] = 0
+    adictionary[letter] += 1
 for key, result in sorted(adictionary.items()):
     if result != 0:
         print(key, " appears ", result, " times")
-
