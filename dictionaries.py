@@ -3,13 +3,15 @@
 
 avowel = ('a,e,i,o,u')
 adictionary = {}
+adictionary['e']=5
 aword = input("Enter any word ")
 
 for letter in aword:
     if letter in avowel:
-        if letter not in adictionary:
-            adictionary[letter] = 0
-    adictionary[letter] += 1
+        #ensures dictionary is always populated. No Key error exception
+        adictionary.setdefault(letter, 0)
+
+        adictionary[letter] += 1
 for key, result in sorted(adictionary.items()):
     if result != 0:
         print(key, " appears ", result, " times")
