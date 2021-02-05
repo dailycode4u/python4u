@@ -12,7 +12,7 @@ for letter in aword:
         adictionary.setdefault(letter, 0)
         adictionary[letter] += 1
 
-        #using sorted(because dictionaries are unsorted), and items method to access items in dictionary
+        #using sorted function (because dictionaries are unsorted), and items method to access items in dictionary
 for key, result in sorted(adictionary.items()):
     if result != 0:
         print(key, " appears ", result, " times")
