@@ -30,3 +30,4 @@ mytuple2 = ('tuple',)
 notatuple = ('string')
 print(type(mytuple2))
 print(type(notatuple))
+
