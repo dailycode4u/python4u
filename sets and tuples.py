@@ -19,13 +19,13 @@ f = sampleset.intersection(set(word))
 print(f)
 
 #TUPLES
-# Tuples are just immutable lists that are represented by parenthesis
+# Tuples are just immutable lists that are represented by parentheses
 
 mytuple = ('a', 'b', 'c')
 mylist = ['a', 'b', 'c']
 print(type(mytuple))
 print(type(mylist))
-# remember: every tuple needs to include at least one comma between the parenthesis
+# remember: every tuple needs to include at least one comma between the parentheses
 mytuple2 = ('tuple',)
 notatuple = ('string')
 print(type(mytuple2))
