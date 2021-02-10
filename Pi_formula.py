@@ -9,4 +9,4 @@ def picalc(num: int) -> float:
         denominator += 2
         operation *= -1
     return print(pi)
-picalc(100000)
+picalc(10000)
