@@ -1,4 +1,5 @@
-import functions
+from Topics import functions
+
 help(functions)
 '''
 wording = input("enter word ")
