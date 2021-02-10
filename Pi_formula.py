@@ -10,4 +10,6 @@ def picalc(num: int) -> float:
         operation *= -1
     return print(pi)
 if __name__ == "__main__":
+    """The more terms in the infinite series (the higher the value of num when picalc is called),
+    the more accurate the ultimate calculation of pi will be."""
     picalc(10000)
