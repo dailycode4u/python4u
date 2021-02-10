@@ -9,4 +9,5 @@ def picalc(num: int) -> float:
         denominator += 2
         operation *= -1
     return print(pi)
-picalc(10000)
+if __name__ == "__main__":
+    picalc(10000)
