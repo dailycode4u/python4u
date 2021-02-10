@@ -1,4 +1,4 @@
-"""from typing import Generator
+from typing import Generator
 
 
 def fib(n: int) -> Generator[int, None, None]:
@@ -11,5 +11,5 @@ def fib(n: int) -> Generator[int, None, None]:
         yield last
 
 for i in fib(10):
-    print(i)"""
+    print(i)
 
